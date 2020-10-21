@@ -12,19 +12,30 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
 </head>
 <body>
-    <h1>About</h1>
-    <h2>
-        Welcome! This site is a small project made by Jack H. to celebrate the ending of the year 2020 as it was not the best year
-        so the meme of crab rave here will be "2020 is gone!" <i>Crabs start dancing</i>. I have used JavaScript to make the Crab Rave music video start
-        playing at an exact time so that when the beat drop hits, it will hit at 12:00AM. All of this will be automated. You do not need to touch
-        anything. Just sit back and relax and as the timer ticks down!
-    </h1>
+    <p class="countdown-texts" id="currentDateText"></p>
+    <p class="countdown-texts" id="timeUntilPlayText">Timer</p>
+    <p class="countdown-texts" id="yaytext"></p>
 
-    <iframe id="video" width="560" height="315" src="//www.youtube.com/embed/cE0wfjsybIQ?enablejsapi=1"
-     frameborder="0" allowfullscreen>
-    </iframe>
-    <button id="play-button">PLay</button>
-    <button id="pause-button">Pause</button>
+    <div class="iframe-container">
+        <iframe id="video" width="560" height="315" src="//www.youtube.com/embed/cE0wfjsybIQ?enablejsapi=1"
+        frameborder="0" allowfullscreen>
+        </iframe>
+    </div>
+
+
+
+
+
+
+    <div class="about-wrapper">
+        <h1>About</h1>
+        <h2>
+            Welcome! This site is a small project made by Jack H. to celebrate the ending of the year 2020 as it was not the best year
+            so the meme of crab rave here will be "2020 is gone!" <i>Crabs start dancing</i>. I have used JavaScript to make the Crab Rave music video start
+            playing at an exact time so that when the beat drop hits, it will hit at 12:00AM. All of this will be automated. You do not need to touch
+            anything. Just sit back and relax and as the timer ticks down!
+        </h1>
+    </div>
 
     <script src="script.js"></script>
 </body>

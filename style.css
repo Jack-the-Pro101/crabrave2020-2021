@@ -7,5 +7,44 @@
 }
 
 body {
+    padding: 0;
+    margin: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.iframe-container {
+    background-color: gray;
+    text-align: center;
+    overflow: hidden;
+}
+
+.countdown-texts {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#currentDateText::before {
+    content: 'Your device\'s Date: ';
+    display: block;
+}
+
+.about-wrapper {
+    border: 2px outset silver;
+    background-color: lightsteelblue;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 4rem;
+    text-decoration: underline;
+}
+
+h2 {
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 0px 20px 0px 20px;
+    font-weight: normal;
+    text-align: center;
 }

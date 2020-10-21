@@ -1,3 +1,37 @@
+let displayCurrentDate = document.getElementById('currentDateText');
+let countDownTimer = document.getElementById('timeUntilPlayText');
+
+let currentDate = new Date;
+
+let recheckDate = setInterval(function()
+{ 
+    currentDate = new Date;
+    displayCurrentDate.innerHTML = currentDate;
+}, 100);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // https://developers.google.com/youtube/iframe_api_reference
 
 // global variable for the player
@@ -16,10 +50,7 @@ function onYouTubePlayerAPIReady() {
 
 function onPlayerReady(event) {
   
-(function playVideoNOW() 
-{
-    player.playVideo();
-})
+console.log('Crab Rave video has been succesfully initilized')
   
 }
 
