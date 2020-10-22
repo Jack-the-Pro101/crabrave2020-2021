@@ -13,12 +13,14 @@ let recheckDate = setInterval(function()
 
 // OMEGA RGB background changer
 function initRGB() {
-    document.getElementById('body').style = 'animation: rgbBg 1.5s infinite'
+    document.getElementById('body').style = 'animation: rgbBg 1.5s infinite';
+
+    setTimeout(function()
+    {
+        document.getElementById('body').style = 'background-color:black;color:white;';
+    }, 192000)
 }
-setTimeout(function()
-{
-    document.getElementById('body').style = 'background-color:black;color:white;'
-}, 192)
+
 
 
 // https://developers.google.com/youtube/iframe_api_reference
