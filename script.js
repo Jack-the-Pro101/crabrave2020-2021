@@ -15,7 +15,10 @@ let recheckDate = setInterval(function()
 function initRGB() {
     document.getElementById('body').style = 'animation: rgbBg 1.5s infinite'
 }
-
+setTimeout(function()
+{
+    document.getElementById('body').style = 'background-color:black;color:white;'
+}, 192)
 
 
 // https://developers.google.com/youtube/iframe_api_reference
@@ -36,7 +39,7 @@ function onYouTubePlayerAPIReady() {
 
 function onPlayerReady(event) {
   
-console.log('Crab Rave video has been succesfully initilized')
+console.log('Crab Rave video has been succesfully initilized');
   
 }
 
@@ -45,6 +48,3 @@ var tag = document.createElement('script');
 tag.src = "//www.youtube.com/player_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-
-//player.pauseVideo();
