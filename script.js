@@ -1,3 +1,4 @@
+// Date and calulations of date and time
 let displayCurrentDate = document.getElementById('currentDateText');
 let countDownTimer = document.getElementById('timeUntilPlayText');
 
@@ -10,25 +11,10 @@ let recheckDate = setInterval(function()
 }, 100);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// OMEGA RGB background changer
+function initRGB() {
+    document.getElementById('body').style = 'animation: rgbBg 1.5s infinite'
+}
 
 
 
