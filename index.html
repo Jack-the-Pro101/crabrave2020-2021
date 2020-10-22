@@ -5,8 +5,8 @@
 
     <meta charset="UTF-8">
     <meta name="author" content="Jack Huang">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="End 2020 with style and with an automatically synced Crab Rave beat drop! (2020 is gone!)">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Assets/Images/Favicon.jpg" type="image/png">
@@ -16,12 +16,18 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
 </head>
 <body id="body">
-    <p class="countdown-texts" id="currentDateText"></p>
-    <p class="countdown-texts" id="timeUntilPlayText">Timer</p>
-    <p class="countdown-texts" id="yaytext"></p>
-
+    <div class="info-container">
+        <h1 style="margin: 0;">- Info -</h1>
+        <p class="countdown-texts" id="currentDateText">Current date</p>
+    <br/>
+        <p class="countdown-texts" id="timeUntilPlayText">Timer</p>
+    <br/>
+        <p class="countdown-texts" id="timeUntilNewYear">Time 'til new year</p>
+        <p class="countdown-texts" id="yaytext"></p>
+    </div>
     <div class="iframe-container">
-        <iframe id="video" width="560" height="315" src="//www.youtube.com/embed/cE0wfjsybIQ?enablejsapi=1"
+        <iframe id="video" width="896" height="504" 
+        src="//www.youtube.com/embed/cE0wfjsybIQ?enablejsapi=1"
         frameborder="0" allowfullscreen>
         </iframe>
     </div>
@@ -31,11 +37,11 @@
 
 
 
-    <div class="about-wrapper">
+    <div class="about-container">
         <h1>About</h1>
         <h2>
-            Welcome! This site is a small project made by Jack H. to celebrate the ending of the year 2020 as it was not the best year
-            so the meme of crab rave here will be "2020 is gone!" <i>Crabs start dancing</i>. I have used JavaScript to make the Crab Rave music video start
+            Welcome! This site is a small project made by Jack H. to celebrate the ending of the year 2020. Since it wasn't the best year,
+            the meme of crab rave here will be "2020 is gone!" <i>Crabs start dancing</i>. I have used JavaScript to make the Crab Rave music video start
             playing at an exact time so that when the beat drop hits, it will hit at 12:00AM. There are only 2 simple steps to do: 1. Play the video, 2. Pause
             the video and drag the playhead to the beginning. Done! After this, keep the page open, sit back and relax!
         </h1>

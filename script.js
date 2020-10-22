@@ -2,12 +2,17 @@
 let displayCurrentDate = document.getElementById('currentDateText');
 let countDownTimer = document.getElementById('timeUntilPlayText');
 
-let currentDate = new Date;
+var currentDate = new Date;
 
 let recheckDate = setInterval(function()
 { 
     currentDate = new Date;
     displayCurrentDate.innerHTML = currentDate;
+
+    if (currentDate === 'Thu Dec 31 2020 23:58:40')
+    {
+      
+    }
 }, 100);
 
 
@@ -20,6 +25,14 @@ function initRGB() {
         document.getElementById('body').style = 'background-color:black;color:white;';
     }, 192000)
 }
+
+// Initiate when it is time to play
+
+function initVideo()
+{
+
+}
+
 
 
 
