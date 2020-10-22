@@ -11,7 +11,7 @@ let recheckDate = setInterval(function()
 
     if (currentDate === 'Thu Dec 31 2020 23:58:40')
     {
-      
+
     }
 }, 100);
 
@@ -33,8 +33,12 @@ function initVideo()
 
 }
 
+var windowWidth = window.innerWidth;
 
-
+if (windowWidth < 985) {
+  document.getElementById('video').width = '768';
+  document.getElementById('video').height = '432';
+}
 
 // https://developers.google.com/youtube/iframe_api_reference
 
