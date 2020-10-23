@@ -4,17 +4,35 @@ let countDownTimer = document.getElementById('timeUntilPlayText');
 
 var currentDate = new Date;
 
+var currentMonth = currentDate.getMonth();
+var currentDayOfMonth = currentDate.getDate();
+var currentHour = currentDate.getHours();
+var currentMinute = currentDate.getMinutes();
+var currentSecond = currentDate.getSeconds();
+var currentMilliSecond = currentDate.getMilliseconds();
+
+
 let recheckDate = setInterval(function()
 { 
     currentDate = new Date;
     displayCurrentDate.innerHTML = currentDate;
 
-    if (currentDate === 'Thu Dec 31 2020 23:58:40')
+    if (currentMonth == 9 && currentDayOfMonth == 23 && currentHour == 18 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond == 700)
     {
-
+      initVideo();
     }
 }, 100);
 
+// let recheckDate = setInterval(function()
+// { 
+//     currentDate = new Date;
+//     displayCurrentDate.innerHTML = currentDate;
+
+//     if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond == 700)
+//     {
+//       initVideo();
+//     }
+// }, 100);
 
 
 
