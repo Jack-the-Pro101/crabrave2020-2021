@@ -17,7 +17,14 @@ let recheckDate = setInterval(function()
     currentDate = new Date;
     displayCurrentDate.innerHTML = currentDate;
 
-    if (currentMonth == 9 && currentDayOfMonth == 23 && currentHour == 18 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond == 700)
+    currentMonth = currentDate.getMonth();
+    currentDayOfMonth = currentDate.getDate();
+    currentHour = currentDate.getHours();
+    currentMinute = currentDate.getMinutes();
+    currentSecond = currentDate.getSeconds();
+    currentMilliSecond = currentDate.getMilliseconds();
+
+    if (currentMonth == 9 && currentDayOfMonth == 23 && currentHour == 18 && currentMinute == 5 && currentSecond == 44 && currentMilliSecond == 700)
     {
       initVideo();
     }
