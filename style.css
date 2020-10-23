@@ -100,8 +100,8 @@ iframe {
 }
 
 h1 {
-    font-family: 'Roboto Slab';
     text-align: center;
+    font-family: 'Roboto Slab';
     width: 100%;
     font-size: 4rem;
     text-decoration: underline;
