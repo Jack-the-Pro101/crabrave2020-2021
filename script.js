@@ -16,6 +16,28 @@ let recheckDate = setInterval(function()
 }, 100);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function initVideo()
+{
+  player.playVideo();
+}
+
+
+
 // OMEGA RGB background changer
 function initRGB() {
     document.getElementById('body').style = 'animation: rgbBg 1.5s infinite';
@@ -24,13 +46,6 @@ function initRGB() {
     {
         document.getElementById('body').style = 'background-color:black;color:white;';
     }, 192000)
-}
-
-// Initiate when it is time to play
-
-function initVideo()
-{
-
 }
 
 var windowWidth = window.innerWidth;
