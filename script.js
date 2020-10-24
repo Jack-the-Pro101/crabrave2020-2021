@@ -31,7 +31,7 @@ let recheckDate = setInterval(function()
     document.getElementById('secondsCountdown').innerHTML = currentSecond;
     document.getElementById('millisecondsCoundown').innerHTML = currentMilliSecond;
 
-    if (currentMonth == 9 && currentDayOfMonth == 23 && currentHour == 18 && currentMinute == 5 && currentSecond == 44 && currentMilliSecond > 700 && currentMilliSecond < 800)
+    if (currentMonth == 9 && currentDayOfMonth == 23 && currentHour == 21 && currentMinute == 13 && currentSecond == 44 && currentMilliSecond > 700 && currentMilliSecond < 800)
     {
       initVideo();
     }
