@@ -24,11 +24,18 @@ let recheckDate = setInterval(function()
     currentSecond = currentDate.getSeconds();
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 9 && currentDayOfMonth == 23 && currentHour == 18 && currentMinute == 5 && currentSecond == 44 && currentMilliSecond == 700)
+    document.getElementById('monthsCountdown').innerHTML = currentMonth + 1;
+    document.getElementById('daysCountdown').innerHTML = currentDayOfMonth;
+    document.getElementById('hoursCountdown').innerHTML = currentHour;
+    document.getElementById('minutesCountdown').innerHTML = currentMinute;
+    document.getElementById('secondsCountdown').innerHTML = currentSecond;
+    document.getElementById('millisecondsCoundown').innerHTML = currentMilliSecond;
+
+    if (currentMonth == 9 && currentDayOfMonth == 23 && currentHour == 18 && currentMinute == 5 && currentSecond == 44 && currentMilliSecond > 700 && currentMilliSecond < 800)
     {
       initVideo();
     }
-}, 100);
+}, 50);
 
 // let recheckDate = setInterval(function()
 // { 

@@ -149,6 +149,61 @@ h2::after {
     margin: 10px 10px;
 }
 
+.countdown-container {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.countdown-item {
+    background-color: #8484A2;
+    width: 120px;
+    height: 150px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.countdown-item-text {
+    font-size: 4rem;
+}
+
+#monthsCountdown::before {
+    content: 'Month';
+    display: block;
+    font-size: 2rem;
+}
+#daysCountdown::before {
+    content: 'Day';
+    display: block;
+    font-size: 2rem;
+}
+#hoursCountdown::before {
+    content: 'Hours';
+    display: block;
+    font-size: 2rem;
+}
+#minutesCountdown::before {
+    content: 'Minute';
+    display: block;
+    font-size: 2rem;
+}
+#secondsCountdown::before {
+    content: 'Second';
+    display: block;
+    font-size: 2rem;
+}
+#millisecondsCoundown::before {
+    content: 'Millisecond';
+    display: block;
+    font-size: 2rem;
+}
+
 /* ---------------------------------------- */
 
 @keyframes rgbBg {
