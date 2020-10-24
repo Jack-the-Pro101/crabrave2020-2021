@@ -35,7 +35,9 @@ let recheckDate = setInterval(function()
     parsedMilli = parseInt(currentMilliSecond)
     document.getElementById('millisecondsCoundown').innerHTML = parsedMilli;
 
-    if (currentMonth == 9 && currentDayOfMonth == 24 && currentHour == 10 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 500 && currentMilliSecond < 600)
+    currentMilliSecond = currentDate.getMilliseconds();
+
+    if (currentMonth == 9 && currentDayOfMonth == 24 && currentHour == 11 && currentMinute == 8 && currentSecond == 44 && currentMilliSecond > 500 && currentMilliSecond < 600)
     {
       initVideo();
     }
