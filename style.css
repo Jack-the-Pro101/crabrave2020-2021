@@ -13,8 +13,15 @@ html {
 /* ----------------------------------------- */
 /* Colors from https://uidesigndaily.com/posts/sketch-community-page-ui-components-list-card-blog-article-day-1190 */
 
-
 body {
+    background-color: #EAEBFB;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    transition-duration: 6s;
+}
+
+.bodyRGB {
     background-color: #EAEBFB;
     padding: 0;
     margin: 0;

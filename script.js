@@ -37,7 +37,7 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 9 && currentDayOfMonth == 24 && currentHour == 11 && currentMinute == 28 && currentSecond == 44 && currentMilliSecond > 700 && currentMilliSecond < 800)
+    if (currentMonth == 9 && currentDayOfMonth == 24 && currentHour == 15 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 700 && currentMilliSecond < 800)
     {
       initVideo();
     }
@@ -49,8 +49,8 @@ let recheckDate = setInterval(function()
 
 function initVideo()
 {
-  player.playVideo();
-  document.getElementById('body').style = 'transition-duration: 5000ms; background-color: black';
+
+  document.getElementById('body').style = 'background-color: black;';
 
   setTimeout(function()
   {
@@ -61,6 +61,8 @@ function initVideo()
 // OMEGA RGB background changer
 function initRGB() 
 {
+  document.getElementById('body').className = 'bodyRGB';
+
   document.getElementById('body').style = '';
 
     document.getElementById('body').style.backgroundColor = 'red';
