@@ -19,6 +19,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    transition-duration: 0.5s;
 }
 
 .iframe-container {
@@ -206,12 +207,12 @@ h2::after {
 
 /* ---------------------------------------- */
 
-@keyframes rgbBg {
+/* @keyframes rgbBg {
     from { background-color: red}
-    33.333% { background-color: green; }
-    66.666% { background-color: blue }
+    66.666% { background-color: green; }
+    99.999% { background-color: blue }
     to { background-color: red; }
-}
+} */
 
 @media screen and (max-width: 980px) {
     .info-container {

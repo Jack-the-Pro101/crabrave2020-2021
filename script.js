@@ -31,54 +31,47 @@ let recheckDate = setInterval(function()
     document.getElementById('secondsCountdown').innerHTML = currentSecond;
     document.getElementById('millisecondsCoundown').innerHTML = currentMilliSecond;
 
-    if (currentMonth == 9 && currentDayOfMonth == 23 && currentHour == 21 && currentMinute == 13 && currentSecond == 44 && currentMilliSecond > 700 && currentMilliSecond < 800)
+    if (currentMonth == 9 && currentDayOfMonth == 23 && currentHour == 21 && currentMinute == 43 && currentSecond == 44 && currentMilliSecond < 300 && currentMilliSecond > 400)
     {
       initVideo();
     }
 }, 50);
 
-// let recheckDate = setInterval(function()
-// { 
-//     currentDate = new Date;
-//     displayCurrentDate.innerHTML = currentDate;
-
-//     if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond == 700)
-//     {
-//       initVideo();
-//     }
-// }, 100);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function initVideo()
 {
   player.playVideo();
+  document.getElementById('body').style = 'transition-duration: 5000ms; background-color:black';
+
+  setTimeout(function()
+  {
+    initRGB();
+  },75000)
 }
-
-
 
 // OMEGA RGB background changer
-function initRGB() {
-    document.getElementById('body').style = 'animation: rgbBg 1.5s infinite';
+function initRGB() 
+{
+  document.getElementById('body').style = '';
 
-    setTimeout(function()
-    {
-        document.getElementById('body').style = 'background-color:black;color:white;';
-    }, 192000)
+    document.getElementById('body').style.backgroundColor = 'red';
+
+      setTimeout(function()
+      {
+        document.getElementById('body').style.backgroundColor = 'green';
+      },500)
+
+        setTimeout(function()
+        {
+          document.getElementById('body').style.backgroundColor = 'blue';
+        },1000)
+
+          setTimeout(function()
+          {
+            initRGB();
+          },1500)
 }
+
+// Change iframe to smaller if on smaller screen
 
 var windowWidth = window.innerWidth;
 
@@ -87,7 +80,7 @@ if (windowWidth < 985) {
   document.getElementById('video').height = '432';
 }
 
-// https://developers.google.com/youtube/iframe_api_reference
+// https://developers.google.com/youtube/iframe_api_reference 
 
 // global variable for the player
 var player;
