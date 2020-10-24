@@ -13,6 +13,40 @@ html {
 /* ----------------------------------------- */
 /* Colors from https://uidesigndaily.com/posts/sketch-community-page-ui-components-list-card-blog-article-day-1190 */
 
+.noscript-bg {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 999;
+}
+
+.noscript-box {
+    position: absolute;
+    z-index: 999;
+    top: 18%;
+    bottom: 18%;
+    left: 20%;
+    right: 20%;
+    background-color: white;
+}
+
+.noscript-text {
+    padding: 40px 60px;
+}
+
+.noscript-text h5 {
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.noscript-text p {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* ----------------------------------------- */
+
 body {
     background-color: #EAEBFB;
     padding: 0;
