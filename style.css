@@ -166,6 +166,7 @@ h2::after {
     margin: 0;
     padding: 0;
     list-style: none;
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -179,7 +180,6 @@ h2::after {
     height: 150px;
     border-radius: 20px;
     text-align: center;
-    position: relative;
     border: 2px inset silver;
 }
 
@@ -192,30 +192,95 @@ h2::after {
     display: block;
     font-size: 2rem;
 }
+#monthsCountdownCont:hover::after {
+    font-size: 1.8rem;
+    width: 120px;
+    display: block;
+    background-color: #9A9DB5;
+    border-radius: 7px;
+    padding: 5px 10px;
+    position: absolute;
+    content: '^ The current month of your device (1-12)';
+}
+
 #daysCountdown::before {
     content: 'Day';
     display: block;
     font-size: 2rem;
 }
+#daysCountdownCont:hover::after {
+    font-size: 1.8rem;
+    width: 120px;
+    display: block;
+    background-color: #9A9DB5;
+    border-radius: 7px;
+    padding: 5px 10px;
+    position: absolute;
+    content: '^ The current day of your device (1-31)';
+}
+
 #hoursCountdown::before {
     content: 'Hour';
     display: block;
     font-size: 2rem;
 }
+#hoursCountdownCont:hover::after {
+    font-size: 1.8rem;
+    width: 120px;
+    display: block;
+    background-color: #9A9DB5;
+    border-radius: 7px;
+    padding: 5px 10px;
+    position: absolute;
+    content: '^ The current hour of your device (1-24)';
+}
+
 #minutesCountdown::before {
     content: 'Minute';
     display: block;
     font-size: 2rem;
 }
+#minutesCountdownCont:hover::after {
+    font-size: 1.8rem;
+    width: 120px;
+    display: block;
+    background-color: #9A9DB5;
+    border-radius: 7px;
+    padding: 5px 10px;
+    position: absolute;
+    content: '^ The current minute of your device (0-59)';
+}
+
 #secondsCountdown::before {
     content: 'Second';
     display: block;
     font-size: 2rem;
 }
+#secondsCountdownCont:hover::after {
+    font-size: 1.8rem;
+    width: 120px;
+    display: block;
+    background-color: #9A9DB5;
+    border-radius: 7px;
+    padding: 5px 10px;
+    position: absolute;
+    content: '^ The second second of your device (0-59)';
+}
+
 #millisecondsCoundown::before {
     content: 'Millisecond';
     display: block;
     font-size: 2rem;
+}
+#millisecondsCoundownCont:hover::after {
+    font-size: 1.8rem;
+    width: 130px;
+    display: block;
+    background-color: #9A9DB5;
+    border-radius: 7px;
+    padding: 5px 10px;
+    position: absolute;
+    content: '^ The current millisecond of your device (0-100)';
 }
 
 /* ---------------------------------------- */

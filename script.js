@@ -2,14 +2,15 @@
 let displayCurrentDate = document.getElementById('currentDateText');
 let countDownTimer = document.getElementById('timeUntilPlayText');
 
-var currentDate = new Date;
+let currentDate = new Date;
 
-var currentMonth = currentDate.getMonth();
-var currentDayOfMonth = currentDate.getDate();
-var currentHour = currentDate.getHours();
-var currentMinute = currentDate.getMinutes();
-var currentSecond = currentDate.getSeconds();
-var currentMilliSecond = currentDate.getMilliseconds();
+let currentMonth = currentDate.getMonth();
+let currentDayOfMonth = currentDate.getDate();
+let currentHour = currentDate.getHours();
+let currentMinute = currentDate.getMinutes();
+let currentSecond = currentDate.getSeconds();
+let currentMilliSecond = currentDate.getMilliseconds();
+let parsedMilli;
 
 
 let recheckDate = setInterval(function()
@@ -29,9 +30,12 @@ let recheckDate = setInterval(function()
     document.getElementById('hoursCountdown').innerHTML = currentHour;
     document.getElementById('minutesCountdown').innerHTML = currentMinute;
     document.getElementById('secondsCountdown').innerHTML = currentSecond;
-    document.getElementById('millisecondsCoundown').innerHTML = currentMilliSecond;
 
-    if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 500 && currentMilliSecond < 600)
+    currentMilliSecond = currentMilliSecond / 10;
+    parsedMilli = parseInt(currentMilliSecond)
+    document.getElementById('millisecondsCoundown').innerHTML = parsedMilli;
+
+    if (currentMonth == 9 && currentDayOfMonth == 24 && currentHour == 10 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 500 && currentMilliSecond < 600)
     {
       initVideo();
     }
@@ -44,7 +48,7 @@ let recheckDate = setInterval(function()
 function initVideo()
 {
   player.playVideo();
-  document.getElementById('body').style = 'transition-duration: 5000ms; background-color:black';
+  document.getElementById('body').style = 'transition-duration: 5000ms; background-color: black';
 
   setTimeout(function()
   {
