@@ -65,6 +65,15 @@ iframe {
 
 /* ---------------------------------------- */
 
+.howto {
+    text-align: center;
+}
+
+video {
+    margin-bottom: 30px;
+    outline: none;
+}
+
 .about-container {
     background-color: #1E2656;
     width: 80vw;
@@ -75,8 +84,11 @@ iframe {
     padding: 15px 0px;
     margin-bottom: 20px;
     position: relative;
-
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
+
 .about-container::before {
     content: '';
     background-color: white;
@@ -168,6 +180,7 @@ h2::after {
     border-radius: 20px;
     text-align: center;
     position: relative;
+    border: 2px inset silver;
 }
 
 .countdown-item-text {
