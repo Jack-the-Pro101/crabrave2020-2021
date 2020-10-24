@@ -31,10 +31,14 @@ let recheckDate = setInterval(function()
     document.getElementById('secondsCountdown').innerHTML = currentSecond;
     document.getElementById('millisecondsCoundown').innerHTML = currentMilliSecond;
 
-    if (currentMonth == 9 && currentDayOfMonth == 23 && currentHour == 22 && currentMinute == 34 && currentSecond == 44 && currentMilliSecond > 300 && currentMilliSecond < 400)
+    if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 500 && currentMilliSecond < 600)
     {
       initVideo();
     }
+    // if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 600 && currentMilliSecond < 700)
+    // {
+    //   initVideo();
+    // }
 }, 50);
 
 function initVideo()
