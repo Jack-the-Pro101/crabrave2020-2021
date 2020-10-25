@@ -37,11 +37,11 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 9 && currentDayOfMonth == 25 && currentHour == 17 && currentMinute == 3 && currentSecond == 44 && currentMilliSecond > 650 && currentMilliSecond < 750)
+    if (currentMonth == 9 && currentDayOfMonth == 25 && currentHour == 17 && currentMinute == 8 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
     {
       initVideo();
     }
-    // if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 650 && currentMilliSecond < 750)
+    // if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 750 && currentMilliSecond < 850)
     // {
     //   initVideo();
     // }
