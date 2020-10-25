@@ -29,6 +29,12 @@ html {
     left: 20%;
     right: 20%;
     background-color: white;
+    border-radius: 20px;
+}
+.noscript-box::before {
+    background-image: url('http://assets.stickpng.com/images/5a81af7d9123fa7bcc9b0793.png');
+    background-position: center;
+    background-size: cover;
 }
 
 .noscript-text {
@@ -36,12 +42,15 @@ html {
 }
 
 .noscript-text h5 {
-    font-size: 4rem;
+    color: red;
+    font-weight: bold;
+    font-size: 4.5rem;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .noscript-text p {
     font-size: 3rem;
+    color: red;
     margin: 0;
 }
 
