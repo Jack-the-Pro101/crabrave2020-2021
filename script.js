@@ -37,7 +37,7 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 9 && currentDayOfMonth == 25 && currentHour == 17 && currentMinute == 8 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
+    if (currentMonth == 9 && currentDayOfMonth == 25 && currentHour == 17 && currentMinute == 13 && currentSecond == 44 && currentMilliSecond > 875 && currentMilliSecond < 975)
     {
       initVideo();
     }
@@ -45,7 +45,7 @@ let recheckDate = setInterval(function()
     // {
     //   initVideo();
     // }
-}, 50);
+}, 25);
 
 function initVideo()
 {
