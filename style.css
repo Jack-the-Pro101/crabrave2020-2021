@@ -113,6 +113,14 @@ iframe {
     padding: 15px 0px;
 }
 
+#yaytext {
+    transition-duration: 0.5s;
+    font-size: 8rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
 /* ---------------------------------------- */
 
 .howto {

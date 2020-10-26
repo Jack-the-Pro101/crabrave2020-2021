@@ -37,15 +37,15 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 9 && currentDayOfMonth == 25 && currentHour == 17 && currentMinute == 13 && currentSecond == 44 && currentMilliSecond > 875 && currentMilliSecond < 975)
+    if (currentMonth == 9 && currentDayOfMonth == 25 && currentHour == 21 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
     {
       initVideo();
     }
-    // if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 750 && currentMilliSecond < 850)
+    // if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
     // {
     //   initVideo();
     // }
-}, 25);
+}, 50);
 
 function initVideo()
 {
@@ -55,6 +55,10 @@ function initVideo()
 
   setTimeout(function()
   {
+    document.getElementById('yaytext').innerHTML = '2020 is gone!'
+    document.getElementById('body').className = 'bodyRGB';
+    document.getElementById('body').style = '';
+
     initRGB();
   },75000)
 }
@@ -62,20 +66,19 @@ function initVideo()
 // OMEGA RGB background changer
 function initRGB() 
 {
-  document.getElementById('body').className = 'bodyRGB';
-
-  document.getElementById('body').style = '';
-
     document.getElementById('body').style.backgroundColor = 'red';
+    document.getElementById('yaytext').style.color = 'rgb(0,200,0)';
 
       setTimeout(function()
       {
-        document.getElementById('body').style.backgroundColor = 'green';
+        document.getElementById('body').style.backgroundColor = 'rgb(0,200,0)';
+        document.getElementById('yaytext').style.color = 'red';
       },500)
 
         setTimeout(function()
         {
           document.getElementById('body').style.backgroundColor = 'blue';
+          document.getElementById('yaytext').style.color = 'orange';
         },1000)
 
           setTimeout(function()
