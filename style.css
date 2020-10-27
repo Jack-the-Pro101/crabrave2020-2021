@@ -350,7 +350,7 @@ h2::after {
     to { background-color: red; }
 } */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1000px) {
     .info-container {
         width: 92vw;
     }

@@ -37,7 +37,7 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 9 && currentDayOfMonth == 25 && currentHour == 21 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
+    if (currentMonth == 9 && currentDayOfMonth == 26 && currentHour == 21 && currentMinute == 43 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
     {
       initVideo();
     }
@@ -60,7 +60,7 @@ function initVideo()
     document.getElementById('body').style = '';
 
     initRGB();
-  },75000)
+  },75000) // 117 seconds until end of song
 }
 
 // OMEGA RGB background changer
