@@ -4,13 +4,13 @@ let countDownTimer = document.getElementById('timeUntilPlayText');
 
 let currentDate = new Date;
 
-let currentMonth = currentDate.getMonth();
-let currentDayOfMonth = currentDate.getDate();
-let currentHour = currentDate.getHours();
-let currentMinute = currentDate.getMinutes();
-let currentSecond = currentDate.getSeconds();
-let currentMilliSecond = currentDate.getMilliseconds();
-let parsedMilli;
+var currentMonth = currentDate.getMonth();
+var currentDayOfMonth = currentDate.getDate();
+var currentHour = currentDate.getHours();
+var currentMinute = currentDate.getMinutes();
+var currentSecond = currentDate.getSeconds();
+var currentMilliSecond = currentDate.getMilliseconds();
+var parsedMilli;
 
 
 let recheckDate = setInterval(function()
@@ -37,15 +37,38 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 9 && currentDayOfMonth == 26 && currentHour == 21 && currentMinute == 43 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
+    if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 57 && currentSecond == 44)
+    {
+      masterTimer();
+    }
+
+    if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
     {
       initVideo();
     }
-    // if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
-    // {
-    //   initVideo();
-    // }
 }, 50);
+
+function masterTimer()
+{
+  var currentCountdown = 0;
+  var currentCountdownValue = 60 - currentCountdown;
+  var masterTimer = setInterval(function()
+  {
+    currentCountdown++;
+    currentCountdownValue = 60 - currentCountdown;
+    document.getElementById('masterTimer').innerHTML = 'Time until video plays: ' + currentCountdownValue;
+
+    if (currentCountdownValue == 0)
+    {
+      document.getElementById('masterTimer').innerHTML = 'Initiating video now...';
+    }
+    if (currentCountdownValue < 0) {
+      document.getElementById('masterTimer').style.display = 'none';
+    }
+  }, 1000);
+
+  document.getElementById('masterTimer').innerHTML = 'Time until video plays: ' + currentCountdownValue;
+}
 
 function initVideo()
 {
