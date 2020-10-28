@@ -37,15 +37,25 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 57 && currentSecond == 44)
+    if (currentMonth == 9 && currentDayOfMonth == 31 && currentHour == 21 && currentMinute == 43 && currentSecond == 44)
     {
       masterTimer();
     }
 
-    if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
+    if (currentMonth == 9 && currentDayOfMonth == 27 && currentHour == 21 && currentMinute == 43 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
     {
       initVideo();
     }
+
+    // if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 57 && currentSecond == 44)
+    // {
+    //   masterTimer();
+    // }
+
+    // if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
+    // {
+    //   initVideo();
+    // }
 }, 50);
 
 function masterTimer()
@@ -79,8 +89,6 @@ function initVideo()
   setTimeout(function()
   {
     document.getElementById('yaytext').innerHTML = '2020 is gone!'
-    document.getElementById('body').className = 'bodyRGB';
-    document.getElementById('body').style = '';
 
     initRGB();
   },75000) // 117 seconds until end of song
@@ -89,6 +97,10 @@ function initVideo()
 // OMEGA RGB background changer
 function initRGB() 
 {
+
+  document.getElementById('body').className = 'bodyRGB';
+  document.getElementById('body').style = '';
+
     document.getElementById('body').style.backgroundColor = 'red';
     document.getElementById('yaytext').style.color = 'rgb(0,200,0)';
 
