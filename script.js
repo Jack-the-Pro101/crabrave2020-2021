@@ -37,12 +37,12 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 9 && currentDayOfMonth == 31 && currentHour == 21 && currentMinute == 43 && currentSecond == 44)
+    if (currentMonth == 9 && currentDayOfMonth == 27 && currentHour == 21 && currentMinute == 58 && currentSecond == 44)
     {
       masterTimer();
     }
 
-    if (currentMonth == 9 && currentDayOfMonth == 27 && currentHour == 21 && currentMinute == 43 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
+    if (currentMonth == 9 && currentDayOfMonth == 27 && currentHour == 21 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
     {
       initVideo();
     }
