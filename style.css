@@ -121,6 +121,47 @@ iframe {
     margin-bottom: 0;
 }
 
+#masterTimer {
+    margin-bottom: 0;
+}
+
+/* ---------------------------------------- */
+
+.settings-button {
+    position: fixed;
+    left: 0;
+    bottom: 0%;
+    background-color: steelblue;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 9999;
+}
+.settings-button:hover {
+    cursor: pointer;
+}
+.settings-button i {
+    font-size: 70px;
+    color: white;
+    padding: 0px 10px;
+}
+.settings-container {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: none;
+    background: rgba(0,0,0,0.5);
+    z-index: 99999;
+}
+.settings {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    top: 15%;
+    bottom: 15%;
+    background-color: lightskyblue;
+    z-index: 99999;
+}
+
 /* ---------------------------------------- */
 
 .howto {
