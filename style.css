@@ -16,6 +16,10 @@ html {
 .noscript-bg {
     height: 100vh;
     width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: rgba(0, 0, 0, 0.7);
     position: fixed;
     z-index: 999;
@@ -142,11 +146,17 @@ iframe {
 .settings-button i {
     font-size: 70px;
     color: white;
-    padding: 0px 10px;
+    padding: 7px 10px;
+}
+.settings-button i:hover {
+    transition-duration: 300ms;
+    transform: rotate(180deg);
 }
 .settings-container {
+    overflow: auto;
     height: 100vh;
     width: 100vw;
+    top: 0;
     position: fixed;
     display: none;
     background: rgba(0,0,0,0.5);
@@ -158,8 +168,79 @@ iframe {
     right: 15%;
     top: 15%;
     bottom: 15%;
-    background-color: lightskyblue;
+    background-color: #B4B4C6;
+    border-radius: 15px;
     z-index: 99999;
+}
+#closeSettings {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 15px;
+    margin-top: 5px;
+    font-size: 60px;
+    color: white;
+}
+#closeSettings:hover {
+    cursor: pointer;
+}
+.settings h4 {
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    margin: 0;
+    text-decoration: underline;
+}
+.settings-theme {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.default-theme {
+    width: 55px;
+    height: 55px;
+    background-color: #1E2656;
+    border: 1px gray solid;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
+}
+.default-theme:hover {
+    cursor: pointer;
+}
+.default-theme i {
+    margin-top: 10px;
+    display: none;
+}
+.pink-theme {
+    width: 55px;
+    height: 55px;
+    background-color: #ec82d2;
+    border: 1px gray solid;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
+}
+.pink-theme:hover {
+    cursor: pointer;
+}
+.pink-theme i {
+    margin-top: 10px;
+    display: none;
+}
+.settings-theme h6 {
+    color: white;
+    text-align: left;
+    font-size: 3.5rem;
+    margin: 20px 0px 0px 0px;
+}
+
+.advanced-settings {
+
 }
 
 /* ---------------------------------------- */

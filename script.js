@@ -67,12 +67,12 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 9 && currentDayOfMonth == 28 && currentHour == 16 && currentMinute == 12 && currentSecond == 44)
+    if (currentMonth == 9 && currentDayOfMonth == 28 && currentHour == 21 && currentMinute == 27 && currentSecond == 44)
     {
       masterTimer();
     }
 
-    if (currentMonth == 9 && currentDayOfMonth == 28 && currentHour == 16 && currentMinute == 13 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
+    if (currentMonth == 9 && currentDayOfMonth == 28 && currentHour == 21 && currentMinute == 28 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
     {
       initVideo();
     }
@@ -167,3 +167,9 @@ document.getElementById('settingsButton').addEventListener('click', function()
 {
   document.getElementById('settingsContainer').style.display = 'block'
 })
+
+document.getElementById('closeSettings').addEventListener('click', function()
+{
+  document.getElementById('settingsContainer').style.display = 'none'
+})
+
