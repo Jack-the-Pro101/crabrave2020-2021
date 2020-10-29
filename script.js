@@ -173,3 +173,14 @@ document.getElementById('closeSettings').addEventListener('click', function()
   document.getElementById('settingsContainer').style.display = 'none'
 })
 
+document.getElementById('defaultTheme').addEventListener('click', function()
+{
+  document.getElementById('infoContainer').style.backgroundColor = '#1E2656';
+  document.getElementById('aboutContainer').style.backgroundColor = '#1E2656';
+})
+
+document.getElementById('pinkTheme').addEventListener('click', function()
+{
+  document.getElementById('infoContainer').style.backgroundColor = '#ec82d2';
+  document.getElementById('aboutContainer').style.backgroundColor = '#ec82d2';
+})
