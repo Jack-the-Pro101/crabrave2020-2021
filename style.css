@@ -197,6 +197,7 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
 }
 .default-theme {
     width: 55px;
@@ -218,7 +219,7 @@ iframe {
 .pink-theme {
     width: 55px;
     height: 55px;
-    background-color: #ec82d2;
+    background-color: #c56baf;
     border: 1px gray solid;
     color: white;
     font-size: 30px;
@@ -240,7 +241,10 @@ iframe {
 }
 
 .advanced-settings {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 1;
 }
 
 /* ---------------------------------------- */

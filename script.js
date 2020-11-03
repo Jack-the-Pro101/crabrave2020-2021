@@ -177,10 +177,22 @@ document.getElementById('defaultTheme').addEventListener('click', function()
 {
   document.getElementById('infoContainer').style.backgroundColor = '#1E2656';
   document.getElementById('aboutContainer').style.backgroundColor = '#1E2656';
+  document.getElementById('monthsCountdownCont').style.backgroundColor = '#8484A2';
+  document.getElementById('daysCountdownCont').style.backgroundColor = '#8484A2';
+  document.getElementById('hoursCountdownCont').style.backgroundColor = '#8484A2';
+  document.getElementById('minutesCountdownCont').style.backgroundColor = '#8484A2';
+  document.getElementById('secondsCountdownCont').style.backgroundColor = '#8484A2';
+  document.getElementById('millisecondsCoundownCont').style.backgroundColor = '#8484A2';
 })
 
 document.getElementById('pinkTheme').addEventListener('click', function()
 {
-  document.getElementById('infoContainer').style.backgroundColor = '#ec82d2';
-  document.getElementById('aboutContainer').style.backgroundColor = '#ec82d2';
+  document.getElementById('infoContainer').style.backgroundColor = '#c56baf';
+  document.getElementById('aboutContainer').style.backgroundColor = '#c56baf';
+  document.getElementById('monthsCountdownCont').style.backgroundColor = '#d195c2';
+  document.getElementById('daysCountdownCont').style.backgroundColor = '#d195c2';
+  document.getElementById('hoursCountdownCont').style.backgroundColor = '#d195c2';
+  document.getElementById('minutesCountdownCont').style.backgroundColor = '#d195c2';
+  document.getElementById('secondsCountdownCont').style.backgroundColor = '#d195c2';
+  document.getElementById('millisecondsCoundownCont').style.backgroundColor = '#d195c2';
 })
