@@ -193,7 +193,6 @@ iframe {
     text-decoration: underline;
 }
 .settings-theme {
-    margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,8 +212,7 @@ iframe {
     cursor: pointer;
 }
 .default-theme i {
-    margin-top: 10px;
-    display: none;
+    margin-top: 12px;
 }
 .pink-theme {
     width: 55px;
@@ -230,7 +228,7 @@ iframe {
     cursor: pointer;
 }
 .pink-theme i {
-    margin-top: 10px;
+    margin-top: 12px;
     display: none;
 }
 .settings-theme h6 {
@@ -244,7 +242,13 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 1;
+}
+.advanced-settings h6 {
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 20px 0px 0px 0px;
+    text-decoration: underline;
 }
 
 /* ---------------------------------------- */

@@ -67,12 +67,12 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 9 && currentDayOfMonth == 28 && currentHour == 21 && currentMinute == 27 && currentSecond == 44)
+    if (currentMonth == 10 && currentDayOfMonth == 3 && currentHour == 18 && currentMinute == 27 && currentSecond == 44)
     {
       masterTimer();
     }
 
-    if (currentMonth == 9 && currentDayOfMonth == 28 && currentHour == 21 && currentMinute == 28 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
+    if (currentMonth == 10 && currentDayOfMonth == 3 && currentHour == 18 && currentMinute == 28 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
     {
       initVideo();
     }
@@ -86,7 +86,7 @@ let recheckDate = setInterval(function()
     // {
     //   initVideo();
     // }
-}, 50);
+}, 25);
 
 function masterTimer()
 {
@@ -183,6 +183,8 @@ document.getElementById('defaultTheme').addEventListener('click', function()
   document.getElementById('minutesCountdownCont').style.backgroundColor = '#8484A2';
   document.getElementById('secondsCountdownCont').style.backgroundColor = '#8484A2';
   document.getElementById('millisecondsCoundownCont').style.backgroundColor = '#8484A2';
+  document.getElementById('defaultThemeCheck').style.display = 'block';
+  document.getElementById('pinkThemeCheck').style.display = 'none';
 })
 
 document.getElementById('pinkTheme').addEventListener('click', function()
@@ -195,4 +197,6 @@ document.getElementById('pinkTheme').addEventListener('click', function()
   document.getElementById('minutesCountdownCont').style.backgroundColor = '#d195c2';
   document.getElementById('secondsCountdownCont').style.backgroundColor = '#d195c2';
   document.getElementById('millisecondsCoundownCont').style.backgroundColor = '#d195c2';
+  document.getElementById('defaultThemeCheck').style.display = 'none';
+  document.getElementById('pinkThemeCheck').style.display = 'block';
 })
