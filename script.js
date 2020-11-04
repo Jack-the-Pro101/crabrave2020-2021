@@ -67,12 +67,12 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 10 && currentDayOfMonth == 3 && currentHour == 18 && currentMinute == 27 && currentSecond == 44)
+    if (currentMonth == 10 && currentDayOfMonth == 3 && currentHour == 19 && currentMinute == 32 && currentSecond == 44)
     {
       masterTimer();
     }
 
-    if (currentMonth == 10 && currentDayOfMonth == 3 && currentHour == 18 && currentMinute == 28 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
+    if (currentMonth == 10 && currentDayOfMonth == 3 && currentHour == 19 && currentMinute == 33 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
     {
       initVideo();
     }
@@ -91,23 +91,25 @@ let recheckDate = setInterval(function()
 function masterTimer()
 {
   var currentCountdown = 0;
-  var currentCountdownValue = 60 - currentCountdown;
+  var currentCountdownValue = 61 - currentCountdown;
+  var currentCountdownString = ' 61 seconds';
   var masterTimer = setInterval(function()
   {
     currentCountdown++;
-    currentCountdownValue = 60 - currentCountdown;
-    document.getElementById('masterTimer').innerHTML = 'Time until video plays: ' + currentCountdownValue;
+    currentCountdownValue = 61 - currentCountdown;
+    currentCountdownString = currentCountdownValue + ' seconds';
+    document.getElementById('masterTimer').innerHTML = 'Time until video plays: ' + currentCountdownString;
 
     if (currentCountdownValue == 0)
     {
       document.getElementById('masterTimer').innerHTML = 'Initiating video now...';
     }
     if (currentCountdownValue < 0) {
-      document.getElementById('masterTimer').style.display = 'none';
+      document.getElementById('masterTimer').style.display = 'none'; 
     }
   }, 1000);
 
-  document.getElementById('masterTimer').innerHTML = 'Time until video plays: ' + currentCountdownValue;
+  document.getElementById('masterTimer').innerHTML = 'Time until video plays: ' + currentCountdownString;
 }
 
 function initVideo()
