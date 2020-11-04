@@ -67,12 +67,12 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 10 && currentDayOfMonth == 4 && currentHour == 16 && currentMinute == 57 && currentSecond == 44)
+    if (currentMonth == 10 && currentDayOfMonth == 4 && currentHour == 17 && currentMinute == 57 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
     {
       masterTimer();
     }
 
-    if (currentMonth == 10 && currentDayOfMonth == 4 && currentHour == 16 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
+    if (currentMonth == 10 && currentDayOfMonth == 4 && currentHour == 17 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
     {
       initVideo();
     }
@@ -105,7 +105,7 @@ function masterTimer()
       document.getElementById('masterTimer').innerHTML = 'Initiating video now...';
     }
     if (currentCountdownValue < 0) {
-      document.getElementById('masterTimer').style.display = 'none'; 
+      document.getElementById('masterTimer').style.display = 'none';
     }
   }, 1000);
 
