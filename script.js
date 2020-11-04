@@ -67,12 +67,12 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 10 && currentDayOfMonth == 3 && currentHour == 19 && currentMinute == 37 && currentSecond == 44)
+    if (currentMonth == 10 && currentDayOfMonth == 4 && currentHour == 16 && currentMinute == 57 && currentSecond == 44)
     {
       masterTimer();
     }
 
-    if (currentMonth == 10 && currentDayOfMonth == 3 && currentHour == 19 && currentMinute == 38 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
+    if (currentMonth == 10 && currentDayOfMonth == 4 && currentHour == 16 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
     {
       initVideo();
     }
@@ -120,7 +120,7 @@ function initVideo()
 
   setTimeout(function()
   {
-    document.getElementById('yaytext').innerHTML = '2020 is gone!'
+    document.getElementById('yaytext').innerHTML = '2020 is gone!';
 
     initRGB();
   },75000) // 117 seconds until end of song
