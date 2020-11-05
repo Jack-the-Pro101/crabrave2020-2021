@@ -67,17 +67,17 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 10 && currentDayOfMonth == 4 && currentHour == 17 && currentMinute == 57 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
+    if (currentMonth == 10 && currentDayOfMonth == 4 && currentHour == 21 && currentMinute == 2 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
     {
       masterTimer();
     }
 
-    if (currentMonth == 10 && currentDayOfMonth == 4 && currentHour == 17 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
+    if (currentMonth == 10 && currentDayOfMonth == 4 && currentHour == 21 && currentMinute == 3 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
     {
       initVideo();
     }
 
-    // if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 57 && currentSecond == 44)
+    // if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 57 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
     // {
     //   masterTimer();
     // }
