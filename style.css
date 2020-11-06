@@ -60,6 +60,21 @@ html {
 
 /* ----------------------------------------- */
 
+body::-webkit-scrollbar {
+    background: rgba(136, 136, 136, 0.281);
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+}
+body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(87, 87, 87);
+}
+
 body {
     background-color: #EAEBFB;
     padding: 0;
@@ -421,7 +436,7 @@ h2::after {
     border-radius: 7px;
     padding: 5px 10px;
     position: absolute;
-    content: '^ The current hour of your device (1-24)';
+    content: '^ The current hour of your device (0-23)';
 }
 
 #minutesCountdown::before {
