@@ -186,8 +186,21 @@ iframe {
     bottom: 15%;
     background-color: #B4B4C6;
     border-radius: 15px;
+    overflow: auto;
     z-index: 99999;
 }
+.settings::-webkit-scrollbar {
+    background: transparent;
+    width: 5px;
+}
+.settings::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.settings::-webkit-scrollbar-thumb:hover {
+    background: rgb(87, 87, 87);
+}
+
 #closeSettings {
     display: inline-block;
     position: absolute;

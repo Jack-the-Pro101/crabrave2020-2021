@@ -43,6 +43,13 @@ var currentMilliSecond = currentDate.getMilliseconds();
 var parsedMilli;
 
 
+let yearCheck = currentDate.getFullYear();
+if (yearCheck > 2020)
+{
+  document.getElementById('pageTitle').innerHTML = '2020 is gone!'
+}
+
+
 let recheckDate = setInterval(function()
 { 
     currentDate = new Date;
@@ -121,9 +128,10 @@ function initVideo()
   setTimeout(function()
   {
     document.getElementById('yaytext').innerHTML = '2020 is gone!';
+    document.getElementById('pageTitle').innerHTML = '- 2020 is gone! -';
 
     initRGB();
-  },75000) // 117 seconds until end of song
+  },74900) // 117 seconds until end of song
 }
 
 // OMEGA RGB background changer
