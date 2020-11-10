@@ -74,12 +74,12 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 10 && currentDayOfMonth == 10 && currentHour == 17 && currentMinute == 37 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
+    if (currentMonth == 10 && currentDayOfMonth == 10 && currentHour == 17 && currentMinute == 57 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
     {
       masterTimer();
     }
 
-    if (currentMonth == 10 && currentDayOfMonth == 10 && currentHour == 17 && currentMinute == 38 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
+    if (currentMonth == 10 && currentDayOfMonth == 10 && currentHour == 17 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
     {
       initVideo();
     }
@@ -152,19 +152,19 @@ function initRGB()
       {
         document.getElementById('body').style.backgroundColor = 'rgb(0,200,0)';
         document.getElementById('yaytext').style.color = 'red';
-      },500)
+      },480)
 
         setTimeout(function()
         {
           document.getElementById('body').style.backgroundColor = 'blue';
           document.getElementById('yaytext').style.color = 'orange';
-        },1000)
+        },960)
 
           setTimeout(function()
           {
             initRGB();
-          },1500)
-return 'RGB prematurely called by console';
+          },1440)
+  return 'RGB prematurely called by console';
 }
 
 // Change iframe to smaller if on smaller screen

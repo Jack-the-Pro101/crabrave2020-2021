@@ -84,11 +84,10 @@ body {
 }
 
 .bodyRGB {
-    background-color: #EAEBFB;
     padding: 0;
     margin: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    transition-duration: 0.5s;
+    transition-duration: 480ms;
 }
 
 .iframe-container {
