@@ -61,18 +61,18 @@ html {
 /* ----------------------------------------- */
 
 body::-webkit-scrollbar {
-    background: rgba(136, 136, 136, 0.281);
+    background: rgba(136, 136, 136, 0.425);
     width: 10px;
 }
 body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey; 
 }
 body::-webkit-scrollbar-thumb {
-    background: #888;
+    background: rgba(100, 100, 100, 0.774);
     border-radius: 10px;
 }
 body::-webkit-scrollbar-thumb:hover {
-    background: rgb(87, 87, 87);
+    background: rgb(70, 70, 70);
 }
 
 body {

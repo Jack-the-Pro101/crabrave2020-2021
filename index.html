@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="DOM">
 <head>
     <title id="pageTitle">Crab Rave 2020 -> 2021</title>
 
@@ -48,7 +48,7 @@
     </noscript>
     <div class="info-container" id="infoContainer">
         <h1 style="margin: 0;">Info</h1>
-        <p class="countdown-texts" id="currentDateText">Current date here</p>
+        <p class="countdown-texts" id="currentDateText" title="Your device's date">Current date here</p>
     <br/>
         <ul class="countdown-container">
             <li class="countdown-item" id='monthsCountdownCont'>
@@ -86,17 +86,21 @@
         <p class="countdown-texts" id="masterTimer"></p>
         <p class="countdown-texts" id="yaytext"></p>
     </div>
-    <div class="settings-button" role="button" id="settingsButton">
+    <div class="settings-button" role="button" id="settingsButton" title="Open settings">
         <i class="fa fa-gear"></i>
     </div>
     <div class="settings-container" id="settingsContainer">
         <div class="settings">
-            <i class="fa fa-close" id="closeSettings"></i>
+            <i class="fa fa-close" id="closeSettings" title="Close settings"></i>
             <h4>Settings</h4>
             <div class="settings-theme">
                 <h6>Themes</h6>
-                <div class="default-theme" id="defaultTheme" role="button" name="Default theme selector"><i class='fas fa-check' id="defaultThemeCheck"></i></div>
-                <div class="pink-theme" id="pinkTheme" role="button" name="Pink theme selector"><i class='fas fa-check' id="pinkThemeCheck"></i></div>
+                <div class="default-theme" id="defaultTheme" role="button" name="Default theme selector" title="This theme is selected">
+                    <i class='fas fa-check' id="defaultThemeCheck"></i>
+                </div>
+                <div class="pink-theme" id="pinkTheme" role="button" name="Pink theme selector" title="Select theme">
+                    <i class='fas fa-check' id="pinkThemeCheck"></i>
+                </div>
             </div>
             <div class="advanced-settings">
                 <h6>Advanced Settings</h6>
@@ -122,7 +126,7 @@
             play on Dec. 31 at 11:58:44 PM.
         </h2>
         </div>
-        <div class="howto">
+        <div class="howto" title="How to set-up (Video demo)">
             <video width="570" height="400" controls preload="auto" muted>
                 <source src="Assets/HowToSetup.mp4" type="video/mp4">
                 Your browser does not support the video tag.

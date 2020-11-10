@@ -74,12 +74,12 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 10 && currentDayOfMonth == 5 && currentHour == 21 && currentMinute == 57 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
+    if (currentMonth == 10 && currentDayOfMonth == 10 && currentHour == 17 && currentMinute == 37 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
     {
       masterTimer();
     }
 
-    if (currentMonth == 10 && currentDayOfMonth == 5 && currentHour == 21 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
+    if (currentMonth == 10 && currentDayOfMonth == 10 && currentHour == 17 && currentMinute == 38 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
     {
       initVideo();
     }
@@ -117,6 +117,8 @@ function masterTimer()
   }, 1000);
 
   document.getElementById('masterTimer').innerHTML = 'Time until video plays: ' + currentCountdownString;
+
+  return 'Master timer prematurely called by console';
 }
 
 function initVideo()
@@ -132,6 +134,8 @@ function initVideo()
 
     initRGB();
   },74900) // 117 seconds until end of song
+
+  return 'Video play prematurely called by console';
 }
 
 // OMEGA RGB background changer
@@ -160,6 +164,7 @@ function initRGB()
           {
             initRGB();
           },1500)
+return 'RGB prematurely called by console';
 }
 
 // Change iframe to smaller if on smaller screen
@@ -195,6 +200,8 @@ document.getElementById('defaultTheme').addEventListener('click', function()
   document.getElementById('millisecondsCoundownCont').style.backgroundColor = '#8484A2';
   document.getElementById('defaultThemeCheck').style.display = 'block';
   document.getElementById('pinkThemeCheck').style.display = 'none';
+  document.getElementById('defaultTheme').title = 'This theme is selected';
+  document.getElementById('pinkTheme').title = 'Select theme';
 })
 
 document.getElementById('pinkTheme').addEventListener('click', function()
@@ -209,4 +216,6 @@ document.getElementById('pinkTheme').addEventListener('click', function()
   document.getElementById('millisecondsCoundownCont').style.backgroundColor = '#d195c2';
   document.getElementById('defaultThemeCheck').style.display = 'none';
   document.getElementById('pinkThemeCheck').style.display = 'block';
+  document.getElementById('pinkTheme').title = 'This theme is selected';
+  document.getElementById('defaultTheme').title = 'Select theme';
 })
