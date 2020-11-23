@@ -74,12 +74,12 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 10 && currentDayOfMonth == 10 && currentHour == 18 && currentMinute == 27 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
+    if (currentMonth == 11 && currentDayOfMonth == 23 && currentHour == 16 && currentMinute == 27 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
     {
       masterTimer();
     }
 
-    if (currentMonth == 10 && currentDayOfMonth == 10 && currentHour == 18 && currentMinute == 28 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
+    if (currentMonth == 11 && currentDayOfMonth == 23 && currentHour == 16 && currentMinute == 28 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
     {
       initVideo();
     }
@@ -177,16 +177,20 @@ if (windowWidth < 985) {
 }
 
 // Settings
+function closeSettings()
+{
+  document.getElementById('settingsContainer').style.display = 'none';
+}
 
 document.getElementById('settingsButton').addEventListener('click', function()
 {
   document.getElementById('settingsContainer').style.display = 'block'
-})
+});
 
 document.getElementById('closeSettings').addEventListener('click', function()
 {
-  document.getElementById('settingsContainer').style.display = 'none'
-})
+  closeSettings();
+});
 
 document.getElementById('defaultTheme').addEventListener('click', function()
 {
