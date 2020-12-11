@@ -46,7 +46,8 @@ var parsedMilli;
 let yearCheck = currentDate.getFullYear();
 if (yearCheck > 2020)
 {
-  document.getElementById('pageTitle').innerHTML = '2020 is gone!'
+  document.getElementById('pageTitle').innerHTML = '2020 is gone!';
+  document.getElementById('yaytext').innerHTML = '2020 is gone!';
 }
 
 
@@ -74,12 +75,12 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 11 && currentDayOfMonth == 23 && currentHour == 16 && currentMinute == 27 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
+    if (currentMonth == 11 && currentDayOfMonth == 11 && currentHour == 17 && currentMinute == 47 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
     {
       masterTimer();
     }
 
-    if (currentMonth == 11 && currentDayOfMonth == 23 && currentHour == 16 && currentMinute == 28 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
+    if (currentMonth == 11 && currentDayOfMonth == 11 && currentHour == 17 && currentMinute == 48 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
     {
       initVideo();
     }
@@ -111,7 +112,8 @@ function masterTimer()
     {
       document.getElementById('masterTimer').innerHTML = 'Initiating video now...';
     }
-    if (currentCountdownValue < 0) {
+    if (currentCountdownValue < 0) 
+    {
       document.getElementById('masterTimer').style.display = 'none';
     }
   }, 1000);
