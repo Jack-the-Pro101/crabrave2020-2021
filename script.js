@@ -75,12 +75,12 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 11 && currentDayOfMonth == 11 && currentHour == 17 && currentMinute == 47 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
+    if (currentMonth == 11 && currentDayOfMonth == 11 && currentHour == 19 && currentMinute == 33 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
     {
       masterTimer();
     }
 
-    if (currentMonth == 11 && currentDayOfMonth == 11 && currentHour == 17 && currentMinute == 48 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
+    if (currentMonth == 11 && currentDayOfMonth == 11 && currentHour == 19 && currentMinute == 34 && currentSecond == 44 && currentMilliSecond > 900 && currentMilliSecond < 1000)
     {
       initVideo();
     }
