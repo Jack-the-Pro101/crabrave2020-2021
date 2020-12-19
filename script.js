@@ -46,8 +46,8 @@ var parsedMilli;
 let yearCheck = currentDate.getFullYear();
 if (yearCheck > 2020)
 {
-  document.getElementById('pageTitle').innerHTML = '2020 is gone!';
-  document.getElementById('yaytext').innerHTML = '2020 is gone!';
+  document.getElementById('pageTitle').innerHTML = '🦀 2020 is gone! 🦀';
+  document.getElementById('yaytext').innerHTML = '🦀 2020 is gone! 🦀';
 }
 
 
@@ -75,12 +75,12 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 11 && currentDayOfMonth == 18 && currentHour == 19 && currentMinute == 57 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
+    if (currentMonth == 11 && currentDayOfMonth == 19 && currentHour == 15 && currentMinute == 57 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
     {
       masterTimer();
     }
 
-    if (currentMonth == 11 && currentDayOfMonth == 18 && currentHour == 19 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
+    if (currentMonth == 11 && currentDayOfMonth == 19 && currentHour == 15 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
     {
       initVideo();
     }
@@ -131,8 +131,8 @@ function initVideo()
 
   setTimeout(function()
   {
-    document.getElementById('yaytext').innerHTML = '2020 is gone!';
-    document.getElementById('pageTitle').innerHTML = '- 2020 is gone! -';
+    document.getElementById('yaytext').innerHTML = '🦀 2020 is gone! 🦀';
+    document.getElementById('pageTitle').innerHTML = '🦀 2020 is gone! 🦀';
 
     initRGB();
   },74900) // 117 seconds until end of song
