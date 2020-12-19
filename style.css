@@ -131,6 +131,21 @@ iframe {
     padding: 15px 0px;
 }
 
+.info-container h4 {
+    font-size: 22px;
+    padding: 35px 15px 5px 15px;
+    position: relative;
+}
+
+.info-container h4 span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 24px;
+    font-size: 32px;
+    cursor: pointer;
+}
+
 #yaytext {
     transition-duration: 0.5s;
     font-size: 8rem;
