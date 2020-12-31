@@ -75,25 +75,15 @@ let recheckDate = setInterval(function()
 
     currentMilliSecond = currentDate.getMilliseconds();
 
-    if (currentMonth == 11 && currentDayOfMonth == 19 && currentHour == 15 && currentMinute == 57 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
+    if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 57 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
     {
       masterTimer();
     }
 
-    if (currentMonth == 11 && currentDayOfMonth == 19 && currentHour == 15 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
+    if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
     {
       initVideo();
     }
-
-    // if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 57 && currentSecond == 44 && currentMilliSecond > 0 && currentMilliSecond < 50)
-    // {
-    //   masterTimer();
-    // }
-
-    // if (currentMonth == 11 && currentDayOfMonth == 31 && currentHour == 23 && currentMinute == 58 && currentSecond == 44 && currentMilliSecond > 850 && currentMilliSecond < 950)
-    // {
-    //   initVideo();
-    // }
 }, 25);
 
 function masterTimer()
